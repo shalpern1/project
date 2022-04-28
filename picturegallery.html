@@ -46,6 +46,17 @@
         #current{
             text-decoration: underline;
         }
+        .first{
+        width: 500px;
+        align-content: center;
+        }
+        #second{
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        text-align: center;
+        font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -79,52 +90,44 @@
         <a href="contactus.html">Contact Us</a>
     </li>
 </ul>
-<div class="gallerycontainer">
-    <div class="gallery">
-        <iframe src="https://drive.google.com/file/d/1vQuDEo9_4NAlWn2jF9108goVsVQBumjY/preview" width="640" height="480" allow="autoplay"></iframe>
-    </div>
-    <div class="gallery">
-        <img src="images/sideview.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/skyline.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/openwater.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/eaglebow.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/flybridge.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/aftdeck.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/aftdeck2.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/salon.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/kitchen.jpeg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/masterbedroom.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/masterbathroom.jpg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/vipsuite.jpeg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/doubleroom.jpeg" width="100%">
-    </div>
-    <div class="gallery">
-        <img src="images/bunkbeds.jpg" width="100%">
-    </div>
+<div class="first">
+    <img src="images/sideview.jpg" id="side"/>
 </div>
+<div id="second">Text</div>
+<script>
+const slides = [
+"images/sideview.jpg",
+"images/skyline.jpg",
+"images/openwater.jpg",
+"images/eaglebow.jpg",
+"images/flybridge.jpg",
+"images/aftdeck.jpg",
+"images/aftdeck2.jpg",
+"images/salon.jpg",
+"images/kitchen.jpeg",
+"images/masterbedroom.jpg",
+"images/masterbathroom.jpg",
+"images/vipsuite.jpeg",
+"images/doubleroom.jpeg",
+"images/bunkbeds.jpg",
+];
+const borders = ["Blue", "Green", "Purple", "Yellow", "Blue", "Green", "Purple", "Yellow", "Blue", "Green", "Purple", "Yellow", "Blue"];
+const text = ["Sideview", "Skyline", "Open Water", "Bow","Flybridge", "Aft Deck", "Salon", "Kitchen","Master Bedroom", "Master Bathroom", "VIP Suite", "Double Room", "Bunk"];
+let i = 0;
+function slideShow() {
+let sideImage = document.getElementById("side");
+if (i === slides.length) {
+i = 0; }
+sideImage.src = slides[i];
+sideImage.style.borderColor = borders[i];
+document.getElementById("second").innerText = text[i]
+i++;
+console.log(i)
+setTimeout(slideShow, 5000);
+}
+document.querySelector("body").onload = function(){
+slideShow();
+};
+</script>
 </body>
 </html>

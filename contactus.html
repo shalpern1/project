@@ -50,6 +50,9 @@
             margin-right: auto;
             width:400px;
         }
+        #comment{
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -88,7 +91,7 @@
 <div>
   <textarea
     name="comments"
-    id="comments"
+    id="comment"
     cols="50"
     rows="10"
     placeholder="Enter your comments here..."
@@ -102,5 +105,15 @@
   </button>
   </div>
 </div>
+<script>
+    function foc(){
+    document.getElementById("comment").style.backgroundColor = "beige"
+    }
+    function off(){
+    document.getElementById("comment").style.backgroundColor = ""
+    }
+    document.getElementById("comment").onfocus = foc
+    document.getElementById("comment").onblur = off
+</script>
 </body>
 </html>

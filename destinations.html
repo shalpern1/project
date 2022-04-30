@@ -82,7 +82,7 @@
     </li>
 </ul>
 <div>
-    <h1>
+    <h1 id="one">
         Destinations
     </h1>
     <p>
@@ -135,6 +135,20 @@
     <img id="sixth" src="images/biminiresort.jpeg" width="42%">
 </div>
 <script>
+    function textchange(){
+    const text = document.getElementById("one")
+    one.textContent = "Let's go on a trip!"
+    }
+    document.getElementById("one").onmouseover = function(){
+        textchange()
+    }
+    function textchange2(){
+    const text = document.getElementById("one")
+    one.textContent = "Destinations"
+    }
+    document.getElementById("one").onmouseleave = function(){
+        textchange2()
+    }
     function enlarge1() {
     document.getElementById("first").style.width = "20%"
     }

@@ -37,7 +37,9 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         body{
-            background-color: turquoise;
+            background-image: url("images/abstract1.jpeg");
+            background-size: 3000px;
+            background-repeat: no-repeat;
         }
         #logo{
             position: relative;
@@ -104,8 +106,8 @@
         Depending on the time of day you reserve, we may cater your trip to make sure you able to
         enjoy the beautiful and warm sun and the magical sunset.
     </p>
-    <img src="images/miamiday.jpeg" width="35%">
-    <img src="images/miaminight.jpeg" width="64%">
+    <img id="first" src="images/miamiday.jpeg" width="35%">
+    <img id="second" src="images/miaminight.jpeg" width="64%">
 </div>
 <div>
     <h2>
@@ -116,8 +118,8 @@
         and Key West are a perfect trip to make sure you get the full experience. Activities include
         sightseeing and snorkeling through the beautiful underwater scenery that the Keys have to offer.
     </p>
-    <img src="images/keyswater.jpeg" width="50%">
-    <img src="images/keysreef.jpeg" width="43.2%">
+    <img id="third" src="images/keyswater.jpeg" width="50%">
+    <img id="fourth" src="images/keysreef.jpeg" width="43.2%">
 </div>
 <div>
     <h2>
@@ -129,8 +131,82 @@
         famous turquoise water found in the Bahamas combined with the amenities of a resort and fantastic shipwrecks
         to explore.
     </p>
-    <img src="images/biminibeach.jpeg" width="50%">
-    <img src="images/biminiresort.jpeg" width="42%">
+    <img id="fifth" src="images/biminibeach.jpeg" width="50%">
+    <img id="sixth" src="images/biminiresort.jpeg" width="42%">
 </div>
+<script>
+    function enlarge1() {
+    document.getElementById("first").style.width = "20%"
+    }
+    function reset1() {
+    document.getElementById("first").style.width = "35%"
+    }
+    document.getElementById("first").onmouseover = function(){
+    enlarge1();
+    }
+    document.getElementById("first").onmouseleave = function(){
+    reset1();
+    }
+    function enlarge2() {
+    document.getElementById("second").style.width = "30%"
+    }
+    function reset2() {
+    document.getElementById("second").style.width = "64%"
+    }
+    document.getElementById("second").onmouseover = function(){
+    enlarge2();
+    }
+    document.getElementById("second").onmouseleave = function(){
+    reset2();
+    }
+    function enlarge3() {
+    document.getElementById("third").style.width = "25%"
+    }
+    function reset3() {
+    document.getElementById("third").style.width = "50%"
+    }
+    document.getElementById("third").onmouseover = function(){
+    enlarge3();
+    }
+    document.getElementById("third").onmouseleave = function(){
+    reset3();
+    }
+    function enlarge4() {
+    document.getElementById("fourth").style.width = "20%"
+    }
+    function reset4() {
+    document.getElementById("fourth").style.width = "43.2%"
+    }
+    document.getElementById("fourth").onmouseover = function(){
+    enlarge4();
+    }
+    document.getElementById("fourth").onmouseleave = function(){
+    reset4();
+    }
+    function enlarge5() {
+    document.getElementById("fifth").style.width = "25%"
+    }
+    function reset5() {
+    document.getElementById("fifth").style.width = "50%"
+    }
+    document.getElementById("fifth").onmouseover = function(){
+    enlarge5();
+    }
+    document.getElementById("fifth").onmouseleave = function(){
+    reset5();
+    }
+    function enlarge6() {
+    document.getElementById("sixth").style.width = "20%"
+    }
+    function reset6() {
+    document.getElementById("sixth").style.width = "42%"
+    }
+    document.getElementById("sixth").onmouseover = function(){
+    enlarge6();
+    }
+    document.getElementById("sixth").onmouseleave = function(){
+    reset6();
+    }
+</script>
 </body>
 </html>

@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zest For Life - 68 Azimut</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8SNGCXJE4R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8SNGCXJE4R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-8SNGCXJE4R');
-</script>
+      gtag("config", "G-8SNGCXJE4R");
+    </script>
     <style>
-        ul{
-            list-style-type: none;
-            background-color: none;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
+      ul {
+        list-style-type: none;
+        background-color: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline;
+        float: left;
+        padding: 10px;
+        position: relative;
+        left: 50px;
+      }
+      .link {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      .link:hover {
+        border-bottom: 2px solid rgb(0, 238, 255);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 14pt;
+      }
+      #welcome {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-image: url("images/sideview.jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        
+      }
+      #logo {
+        position: relative;
+        top: -50px;
+      }
+      #sitemap {
+        background-color: white;
+        position: relative;
+        right: -1300px;
+        margin-top: 620px;
+        width: fit-content;
+      }
+
+      @media screen and (max-width: 1000px) {
+        #logo {
+          display: none;
         }
+        
+        a {
+            font-size: 12px;
+        }
+
         li{
-            display: inline;
-            float: left;
-            padding: 10px ;
-            position: relative;
-            left: 50px;
+            padding: 3px;
+            left: 10px;
         }
-        .link{
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
+
+        #sitemap{background-color: white;
+        position: relative;
+        left:400px;
+        margin-top: 220px;
+        width: fit-content;
+
+
         }
-        .link:hover{
-            border-bottom: 2px solid rgb(0, 238, 255);
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: 14pt;
-        }
-        #welcome{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body{
-            background-image: url("images/sideview.jpg");
-            background-size: 1440px;
-            background-repeat: no-repeat;
-        }
-        #logo{
-            position: relative;
-            top: -50px;
-        }
-        #sitemap{
-            background-color: white;
-            position:relative;
-            right: -1300px;
-            margin-top: 520px;
-            width: fit-content;
-        }
+      }
+
     </style>
-</head>
-<body>
-<ul>
-    <li class="link">
+  </head>
+  <body>
+    <ul>
+      <li class="link">
         <a href="yachtinfo.html">Yacht Information</a>
-    </li>
-    <li class="link">
+      </li>
+      <li class="link">
         <a href="picturegallery.html">Picture Gallery</a>
-    </li>
-    <li class="link">
+      </li>
+      <li class="link">
         <a href="destinations.html">Explore Destinations</a>
-    </li>
-    <li class="link">
+      </li>
+      <li class="link">
         <a href="pricing.html">Pricing</a>
-    </li>
-    <li>
+      </li>
+      <li>
         <a href="https://www.zestforlife68.com/">
-        <img src="images/logo.png" width="250px" id="logo" ></a>
-    </li>
-    <li class="link">
+          <img src="images/logo.png" width="250px" id="logo"
+        /></a>
+      </li>
+      <li class="link">
         <a href="specialevents.html">Special Events</a>
-    </li>
-    <li class="link">
+      </li>
+      <li class="link">
         <a href="calendar.html">Calendar</a>
-    </li>
-    <li class="link">
+      </li>
+      <li class="link">
         <a href="reviews.html">Reviews</a>
-    </li>
-    <li class="link">
+      </li>
+      <li class="link">
         <a href="contactus.html">Contact Us</a>
-    </li>
-</ul>
-<div id="sitemap">
-<a href="sitemap.html">Link to sitemap</a>
-</div>
-</body>
+      </li>
+    </ul>
+    <div id="sitemap">
+      <a href="sitemap.html">Link to sitemap</a>
+    </div>
+  </body>
 </html>

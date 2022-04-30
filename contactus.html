@@ -98,7 +98,7 @@
   ></textarea>
 </div>
   <div>
-  <button type="submit">Submit
+  <button id="but" type="submit">Submit
   </button>
   <button type="reset">
     Reset
@@ -114,6 +114,13 @@
     }
     document.getElementById("comment").onfocus = foc
     document.getElementById("comment").onblur = off
+    
+    function validate() {
+    if (comments["comment"].value.length == 0){
+        alert("Text area must be filled out")
+    }
+    }
+    document.getElementById("but").onclick = validate()
 </script>
 </body>
 </html>
